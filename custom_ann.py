@@ -172,9 +172,9 @@ class Artificial_Neural_Network:
         """Logistická aktivační funkce"""
         return 1/(1+np.exp(-Z)) # Vztah (4)
 
-    def logistic_derivative(self, z):
+    def logistic_derivative(self, Z):
         """Derivace logistické aktivační funkce"""
-        return self.logistic_activation(z)*(1-self.logistic_activation(z)) # Vztah (5)
+        return self.logistic_activation(Z)*(1-self.logistic_activation(Z)) # Vztah (5)
     
     def loss_function(self, H, Y):
         """Chybová funkce MSE"""
